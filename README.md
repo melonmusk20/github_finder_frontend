@@ -150,9 +150,14 @@ GET /github/history
 
 ---
 
-# Screenshots
 
-Add project screenshots here.
+## Screenshots
+
+![Home Page](./img1.png)
+
+![Search Result/Recent Searches ](./img2.png)
+
+![Backend JSON](./img3.png)
 
 ---
 
