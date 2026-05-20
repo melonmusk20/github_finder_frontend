@@ -12,11 +12,11 @@ The app also stores recent searches in a PostgreSQL database.
 
 ## Frontend Deployment
 
-:contentReference[oaicite:0]{index=0}
+https://github-finder-frontend-iqrkwux4v-melonmusk20s-projects.vercel.app
 
 ## Backend Deployment
 
-:contentReference[oaicite:1]{index=1}
+https://github-finder-backend-ldkq.onrender.com
 
 ---
 
