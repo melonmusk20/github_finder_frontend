@@ -2,59 +2,170 @@
 
 A full-stack GitHub Profile Finder application built using React.js, Spring Boot, and PostgreSQL.
 
-Users can search any GitHub username and view profile details such as followers, repositories, bio, and more. The application also stores recent searches in a PostgreSQL database.
+This application allows users to search GitHub profiles and view details such as followers, repositories, bio, profile image, and more using the GitHub Public API.
+
+The app also stores recent searches in a PostgreSQL database.
 
 ---
 
-## Features
+# Live Demo
+
+## Frontend Deployment
+
+:contentReference[oaicite:0]{index=0}
+
+## Backend Deployment
+
+:contentReference[oaicite:1]{index=1}
+
+---
+
+# Features
 
 - Search GitHub users
-- Fetch live data from GitHub API
-- View profile details
+- Fetch live GitHub profile data
+- Display followers, repos, bio, avatar, etc.
 - Recent search history
 - Responsive UI
 - Loading spinner
 - Error handling
+- REST API integration
+- PostgreSQL database support
 - Full-stack architecture
-- PostgreSQL database integration
-- REST API backend
 
 ---
 
-## Tech Stack
+# Tech Stack
 
-### Frontend
+## Frontend
 - React.js
 - Axios
 - CSS
 
-### Backend
+## Backend
 - Java
 - Spring Boot
 - Spring Data JPA
-- REST API
+- REST APIs
 
-### Database
+## Database
 - PostgreSQL (Supabase)
 
-### Deployment
-- Frontend: Vercel
-- Backend: Render
+## Deployment
+- Vercel
+- Render
 - Docker
 
 ---
 
-## Project Structure
+# Project Structure
 
 ```bash
-github-profile-finder/
+github_finder_frontend/
 │
-├── frontend/
-│   ├── src/
-│   ├── public/
-│   └── package.json
+├── public/
+├── src/
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   └── index.css
 │
-├── backend/
-│   ├── src/
-│   ├── Dockerfile
-│   └── pom.xml
+├── package.json
+└── README.md
+```
+
+---
+
+# API Used
+
+GitHub Public API
+
+```bash
+https://api.github.com/users/{username}
+```
+
+---
+
+# Frontend Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/melonmusk20/github_finder_frontend.git
+```
+
+Go inside project folder:
+
+```bash
+cd github_finder_frontend
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
+
+```bash
+npm start
+```
+
+Runs on:
+
+```bash
+http://localhost:3000
+```
+
+---
+
+# Environment Variables
+
+Create a `.env` file in root directory:
+
+```env
+REACT_APP_API_URL=https://github-finder-backend-ldkq.onrender.com
+```
+
+---
+
+# Backend API Endpoints
+
+Get GitHub profile:
+
+```bash
+GET /github/{username}
+```
+
+Get recent searches:
+
+```bash
+GET /github/history
+```
+
+---
+
+# Screenshots
+
+Add project screenshots here.
+
+---
+
+# Future Improvements
+
+- Dark mode
+- Repository listing
+- Search suggestions
+- Better animations
+- Pagination
+- User authentication
+
+---
+
+# Author
+
+Purbasa Maharana
+
+GitHub:
+https://github.com/melonmusk20
