@@ -10,12 +10,14 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [history, setHistory] = useState([]);
 
+  const API_URL = process.env.REACT_APP_API_URL;
+
   const fetchHistory = async () => {
 
     try {
 
       const res = await axios.get(
-        "http://localhost:8080/github/history"
+        `${API_URL}/github/history`
       );
 
       setHistory(res.data.reverse());
@@ -36,7 +38,7 @@ function App() {
       setError("");
 
       const response = await axios.get(
-        `http://localhost:8080/github/${username}`
+        `${API_URL}/github/${username}`
       );
 
       setProfile(response.data);
@@ -134,4 +136,3 @@ function App() {
 }
 
 export default App;
-
